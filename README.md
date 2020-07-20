@@ -4,5 +4,5 @@
 
 portfolio: sites
 grid, adaptive, burger-menu, accordion
-[Company site](https:comp_grid-adaptive-popup-accordion/#/  "Company site") - сайт компании
+[Online juice store](https://olgatop.github.io/Garnet_grid-accordion-burger-menu/#  "Online juice store") - интернет-магазин соков
 
