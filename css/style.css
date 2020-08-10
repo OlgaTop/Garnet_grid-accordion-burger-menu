@@ -691,6 +691,9 @@ img {
     text-transform: uppercase;
     padding-top: 100px;
     margin-bottom: 40px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-direction: alternate;
 }
 
 .intro_subtitle {
@@ -698,6 +701,30 @@ img {
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 60px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-delay: 1s;
+    animation-direction: alternate;
+}
+
+.benefits_desc {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-delay: 5s;
+    animation-direction: alternate;
+}
+@keyframes slidein {
+    from {
+        margin-left: 70%;
+        width: 300%;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+        opacity: 1;
+    }
 }
 
 /* Buttom start */
@@ -896,6 +923,125 @@ img {
 /* Buttom end */
 
 /* Intro styles end */
+
+:root {
+    --size: 60rem;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    to {
+        -webkit-transform: rotate(1080deg);
+        transform: rotate(1080deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    to {
+        -webkit-transform: rotate(1080deg);
+        transform: rotate(1080deg);
+    }
+}
+
+.spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    height: var(--size);
+    width: var(--size);
+    z-index: -1;
+}
+
+.spinner>.dot {
+    position: absolute;
+    height: calc(var(--size) * .8);
+    width: calc(var(--size) * .8);
+    border-radius: 50%;
+}
+
+.spinner>.dot:after {
+    content: '';
+    position: absolute;
+    height: calc(var(--size) * .12);
+    width: calc(var(--size) * .1);
+    border-radius: 50%;
+}
+
+.spinner>.dot:nth-of-type(1) {
+    top: 0;
+    left: 0;
+    -webkit-animation: rotate 24s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+    animation: rotate 24s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+}
+
+.spinner>.dot:nth-of-type(1):after {
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+   
+}
+
+.spinner>.dot:nth-of-type(2) {
+    top: 0;
+    right: 0;
+    -webkit-animation: rotate 18s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+    animation: rotate 18s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+}
+
+.spinner>.dot:nth-of-type(2):after {
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    
+}
+
+.spinner>.dot:nth-of-type(3) {
+    bottom: 0;
+    right: 0;
+    -webkit-animation: rotate 20s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+    animation: rotate 20s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+}
+
+.spinner>.dot:nth-of-type(3):after {
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+
+.spinner>.dot:nth-of-type(4) {
+    bottom: 0;
+    left: 0;
+    -webkit-animation: rotate 30s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+    animation: rotate 30s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+}
+
+.spinner>.dot:nth-of-type(4):after {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    
+}
 
 /* Benefits start */
 
