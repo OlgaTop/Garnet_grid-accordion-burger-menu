@@ -686,7 +686,7 @@ img {
     font-family: "Metamorphous";
     font-style: normal;
     font-weight: normal;
-    font-size: 96px;
+    font-size: 90px;
     line-height: 120px;
     text-transform: uppercase;
     padding-top: 100px;
@@ -1121,32 +1121,6 @@ img {
 
 /* Benefits end */
 
-/* Videos start */
-
-.videos {
-    width: 100%;
-    margin-top: 80px;
-}
-
-.videos_wrapper {
-    max-width: 1660px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.video_item {
-    padding-top: 56.25%;
-}
-
-.video_element {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Videos end */
 
 /* Footer start */
 
