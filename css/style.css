@@ -1082,6 +1082,8 @@ img {
 
 .benefits_pic {
     max-width: 800px;
+    position: relative;
+    z-index: -2;
 }
 
 .pic_garnet {
